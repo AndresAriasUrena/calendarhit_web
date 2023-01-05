@@ -1,9 +1,10 @@
 :root{
-    --black:#192a56;
+    --blackish:#081d27;
     --almostblack: rgb(32, 32, 32);
     --orange:#f8590f;
     --yellow:#f8d50f;
     --almostwhite: rgb(245, 234, 202);
+    --darkishbluegreen: ;
   }
   
   *{
@@ -108,15 +109,15 @@ header{
     transform: translate(-50%,-50%);
     text-align: center;
   }
-  .inicio .content h3{
+  .inicio .content h1{
     /* color:#fff; */
-    font-size: 5.5rem;
+    font-size: 5.6rem;
     text-transform: uppercase;
 }
   
 .inicio .content p{
     /* color:#fff; */
-    font-size: 1.7rem;
+    font-size: 2rem;
     margin: 10px 0 40px;
     
  }
@@ -136,8 +137,32 @@ header{
     border-color: var(--almostblack);
     text-shadow: none;
 }
-  
+.section{
+    padding: 7.5rem 0;
+}
+.message--default{
+    background-color: var(--blackish);
+}
+section#message .wrapper{
+    max-width: 780px;
+}
 
+.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 2.5rem;
+    transition: padding .2s ease-in;
+}
+section#message {
+    text-align: center;
+} 
+.section-header{
+    padding-bottom: 5rem;
+}
+h2.section-header{
+    font-size: 3.2rem;
+    color: var(--almostwhite);
+}
 
 /* media queries  */
 
