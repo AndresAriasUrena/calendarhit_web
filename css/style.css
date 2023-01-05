@@ -1,0 +1,118 @@
+:root{
+    --black:#192a56;
+    --almostblack: rgb(32, 32, 32);
+    --orange:#f8590f;
+    --yellow:#f8d50f;
+    --almostwhite: rgb(245, 234, 202);
+  }
+  
+  *{
+    font-family: 'Lato', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    /* text-transform: capitalize; */
+    transition: .2s linear;
+  }
+  
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+  }
+  
+header{
+    position: fixed;
+    top:0; left:0;
+    width:100%;
+    z-index: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 7%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    background:var(--almostblack);
+    z-index: 1000;
+  }
+  
+  header .logo{
+    font-size: 2.5rem;
+    color:#666;
+    font-weight: bolder;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;    
+  }
+  header .logo img{
+    width:5rem;
+  }
+  header a.logo span{
+    font-family: 'Audiowide', cursive;
+    transform: translateY(12.5%);
+  }
+  header a.logo span.calendar{
+    color:var(--yellow);
+  }
+  header a.logo span.hit{
+    color:var(--orange);
+  }
+  header .navbar a{
+    font-size: 2rem;
+    margin-left: 2.5rem;
+    color:var(--yellow);
+  }
+  
+  header .navbar a:hover{
+    color:var(--orange);
+  }
+  
+  #menu-bar{
+    font-size: 3rem;
+    color:var(--orange);
+    cursor: pointer;
+    display: none;
+  }
+  .inicio{
+    display: flex;
+    align-items: center;
+    background:url("../images/dawn_bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+  }
+  .inicio .content{
+    width: 90%;
+    /* color: #fff; */
+    color: var(--almostwhite);
+    text-shadow: 1px 1px 2px var(--almostblack);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  .inicio .content h3{
+    /* color:#fff; */
+    font-size: 5.5rem;
+    text-transform: uppercase;
+}
+  
+.inicio .content p{
+    /* color:#fff; */
+    font-size: 1.7rem;
+    margin: 10px 0 40px;
+    
+ }
+ 
+.inicio .content .btn{
+    color:#444;
+    background:#fff;
+}
+
+.inicio .content .btn:hover{
+    color:#fff;
+    background:none;
+    border-color: #fff;
+}
+  
