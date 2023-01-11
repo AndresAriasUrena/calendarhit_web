@@ -33,7 +33,7 @@ header{
     padding:2rem 7%;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     /*background:var(--almostblack);*/
-    background:rgba(0,0,0,.2);
+    background:rgba(0,0,0,.6);
     z-index: 1000;
   }
   
